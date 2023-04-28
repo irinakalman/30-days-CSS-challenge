@@ -46,7 +46,6 @@ body .row .col-lg-4 .left-part {
   z-index: 1;
   background: #eceef2;
   height: 100%;
-  padding-right: 0;
   transition: all 1s ease;
   height: 25rem;
 }
@@ -111,7 +110,7 @@ body .row .col-lg-6 .right-part span {
   color: #787a7e;
 }
 body .row .col-lg-6 .right-part form {
-  padding: 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
 }
@@ -194,7 +193,6 @@ body .row .col-lg-4 .left-part.swap-left form .form-floating:first-of-type {
   }
   body .row .col-lg-6 .right-part {
     box-shadow: 10px 22px 16px #cbced1, 14px -13px 20px #ffffff;
-    padding-left: 0;
   }
   body .row .col-lg-6 .right-part form {
     padding: 30px 80px;

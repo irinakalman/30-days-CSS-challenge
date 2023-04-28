@@ -51,7 +51,7 @@ body {
             z-index: 1;
             background: #eceef2;
             height: 100%;
-            padding-right: 0;
+            
             transition: all 1s ease;
             height: 25rem;
         }
@@ -133,7 +133,7 @@ body {
             }
 
             form {
-                padding: 0;
+                padding: 20px 0;
                 display: flex;
                 flex-direction: column;
 
@@ -236,6 +236,7 @@ body {
 
             .col-lg-4 .left-part {
                 height: 100%;
+                // padding-right: 0;
             }
 
             .col-lg-4 .left-part.swap-left{
@@ -245,7 +246,7 @@ body {
 
             .col-lg-6 .right-part {
                 box-shadow: 10px 22px 16px #cbced1, 14px -13px 20px #ffffff;
-                padding-left: 0;
+                // padding-left: 0;
 
                 form {
                     padding: 30px 80px;
