@@ -86,11 +86,24 @@ body .row .col-lg-6 .right-part .social-icons {
   justify-content: center;
   margin-bottom: 0.5rem;
 }
-body .row .col-lg-6 .right-part .social-icons img {
+body .row .col-lg-6 .right-part .social-icons a {
+  transition: transform 0.2s, background-color 0.2s;
+  border-radius: 50%;
+}
+body .row .col-lg-6 .right-part .social-icons a:hover {
+  transform: translateY(-3px);
+  background-color: #fff8f8;
+  border-radius: 50%;
+}
+body .row .col-lg-6 .right-part .social-icons a:hover img {
+  filter: grayscale(100%);
+}
+body .row .col-lg-6 .right-part .social-icons a img {
   width: 30px;
   height: 30px;
+  max-width: 100%;
 }
-body .row .col-lg-6 .right-part .social-icons img:not(:last-child) {
+body .row .col-lg-6 .right-part .social-icons a:not(:last-child) {
   margin-right: 10px;
 }
 body .row .col-lg-6 .right-part span {

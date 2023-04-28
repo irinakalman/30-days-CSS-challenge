@@ -99,12 +99,30 @@ body {
                 justify-content: center;
                 margin-bottom: 0.5rem;
 
-                img {
-                    width: 30px;
-                    height: 30px;
+                
+
+                a {
+                    transition: transform 0.2s, background-color 0.2s;
+                    border-radius: 50%;
+
+                    &:hover {
+                        transform: translateY(-3px);
+                        background-color: #fff8f8;
+                        border-radius: 50%;
+
+                        img {
+                            filter: grayscale(100%);
+                          }
+                    }
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        max-width: 100%;
+                    }
                 }
 
-                img:not(:last-child) {
+                a:not(:last-child) {
                     margin-right: 10px;
                 }
             }
