@@ -1,90 +1,24 @@
 .row {
-    h1 {
-        font-size:35px;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
-        text-align: center;
+    justify-content: space-between;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-        .buttons-wrap {
-            height: 300px;
-            background: #030600;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
 
-            button {
-                padding: 8px 12px;
-                background: black;
-                border: none;
-                transition: 1s ease-in-out;
-                position: relative;
+    .nav {
+        background: #161a1e;
+    }
 
-                svg {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    fill: none;
-                    stroke: #92d438;
-                    // stroke-dasharray: 150 480;
-                    // stroke-dashoffset: 150;
-                    transition: 1s ease-in-out;
-                    width: 100%;
-                    height: auto;
-                    animation: glowing 2s ease-in-out infinite;
-                    z-index: 1;
-                    transform: translateZ(0)
-                }
+    .nav-link.active {
+        background: #1967fc;
+    }
 
-               
-
-                span {
-                    color: #92d438;
-                    font-size: 18px;
-                }
-            }
-
-            button:nth-of-type(2){
-                svg {
-                    stroke: #ef7cee;
-                }
-
-                span {
-                    color: #ef7cee;
-                }
-            }
-
-            button:nth-of-type(3){
-                svg {
-                    stroke: #02e7f2;
-                }
-
-                span {
-                    color: #02e7f2;
-                }
-            }
-
-           
-
-            button:hover {
-                transition: 1s ease-in-out;
-            }
-
-            button:hover svg {
-                stroke-dasharray: 150 480;
-                stroke-dashoffset: -480;
-            }
-        }
-   
+    .col-1 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 0;
+    }
 }
-
-@keyframes glowing {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-  }
